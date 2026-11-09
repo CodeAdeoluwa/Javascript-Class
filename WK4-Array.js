@@ -1,0 +1,96 @@
+"use strict"
+
+const cars = []
+
+cars[0] = "Volvo"
+cars[1] = "BMW",
+cars[2] = "Honda"
+
+console.log(cars)
+
+const newArray = new Array("Mango", "Apple", "Watermelon")
+
+// console.log(newArray.length)
+// console.log(newArray.toString())
+// console.log(newArray.at(2))
+// console.log(newArray.join("/"))
+// const methods = newArray.pop()
+// console.log(methods)
+
+const result = newArray[0];
+
+console.log(result)
+
+
+// const methods = newArray.push("kiwi")
+
+// const methods = newArray.shift()
+
+// console.log(newArray)
+
+// const methods = newArray.unshift("kiwi")
+
+// console.log(newArray)
+
+newArray[newArray.length] = 1
+console.log(newArray)
+
+const Obj = [
+    {
+        name: "Ade",
+        age: 50
+    }
+]
+
+console.log(`${Obj[0].name} - ${Obj[0].age}` )
+
+// const name = "sola"
+const checkType = Array.isArray(cars)
+
+console.log(checkType)
+
+const combinedArray = [[1, 2], [3, 4], [4, 5]]
+
+// console.log(combinedArray.flat());
+
+const converrtedArray = combinedArray.flat();
+console.log(converrtedArray.flatMap(x => [x, x * 10]));
+
+// console.log(converrtedArray.splice(4, 0, "6", "7"))
+
+const jobs = ["engineer", "teacher", "doctor"]
+// console.log(jobs.indexOf(1))
+const endResult = jobs.toSpliced(2, 1)
+console.log(endResult)
+
+console.log(jobs.toString())
+
+const findNumber = [0, 10, 25, 18, 0]
+
+// function findBiggerNumber(value){
+//     return value > 18
+// }
+
+// const BiggerNumberResult = findNumber.findLastIndex(findBiggerNumber)
+// console.log(BiggerNumberResult)
+
+
+function MapNumber(value){
+    return value * 2
+}
+
+// const Numbers2 = findNumber.map(MapNumber)
+// const Numbers2 = findNumber.flatMap(MapNumber)
+
+
+// console.log(Numbers2)
+
+const ObjectItem = [true, true, true]
+
+function CalCal(total, value){
+    return total + value;
+}
+
+const calculateString = ObjectItem.reduce(CalCal)
+
+console.log(calculateString);
